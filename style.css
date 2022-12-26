@@ -15,3 +15,135 @@
     /* #Font */
     --fontPoppins: 'Poppins', sans-serif;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fontPoppins);
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main h1 {
+    font-weight: 200;
+}
+
+main h1 span {
+    font-weight: 600;
+}
+
+main>p {
+    font-weight: 200;
+    width: 550px;
+    text-align: center;
+
+}
+
+main .cards {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+main .cards .card {
+    height: 300px;
+    width: 400px;
+    margin: 10px 15px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.2);
+}
+
+main .cards .card:nth-child(2) {
+    margin-top: 30px;
+}
+
+main .cards .card .line {
+    height: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+main .cards .card .cyan {
+    background-color: var(--cyan);
+}
+
+main .cards .card .red {
+    background-color: var(--red);
+}
+
+main .cards .card .yellow {
+    background-color: var(--orange);
+}
+
+main .cards .card .blue {
+    background-color: var(--blue);
+}
+
+main .cards .card h2,
+main .cards .card p {
+    padding: 0px 25px;
+}
+
+main .cards .card h2 {
+    color: var(--veryDarkBlue);
+    padding-top: 20px;
+}
+
+main .cards .card p {
+    color: var(--grayishBlue);
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+main .cards .card .icon {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+
+@media (max-width:425px) {
+    main {
+        height: auto;
+    }
+
+    main h1 {
+        font-size: 26px;
+        margin-top: 25px;
+    }
+
+    main>p {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    main .cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    main .cards .card {
+        height: 270px;
+        width: 85%;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    main .cards .two-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
